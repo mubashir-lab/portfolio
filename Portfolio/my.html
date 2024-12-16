@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tailwind Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+
+<body class="bg-white-100">
+  <header class="text-white">
+    <div class="bg-black/[.5] mx-auto flex items-center justify-between py-4 px-20 fixed z-40 w-full">
+      <div class="font-extrabold text-3xl">Team Websites</div>
+      <nav>
+        <ul class="hidden lg:flex gap-10 font-medium">
+          <li><a href="#home" class="hover:text-red-500">Home</a></li>
+          <li><a href="#services" class="hover:text-red-500">Services</a></li>
+          <li><a href="#about" class="hover:text-red-500">About us</a></li>
+          <li><a href="#team" class="hover:text-red-500">Team</a></li>
+          <li><a href="#contact" class="hover:text-red-500">Contact us</a></li>
+          <li><a href="#follow" class="hover:text-red-500">Follow us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- heade end -->
+<!-- home -->
+  <section id="home">
+    <!-- Carousel -->
+  <div class="relative overflow-hidden w-full">
+    <!-- Carousel items -->
+    <div id="carousel" class="flex transition-all duration-500 ease-in-out">
+      <!-- Slide 1 -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="assets/media/home1.webp" alt="Slide 1" class="w-full h-screen object-cover" />
+        <div class="absolute top-1/4 left-10 text-white ms-10" data-aos="zoom-in-up">
+          <h2 class="text-5xl">We Are Developer</h2>
+          <h1 class="text-7xl pt-3">Creative Websites</h1>
+          <p class="pt-3">Developers create websites for various purposes like Business, College Admissions.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="assets/media/home2.webp" alt="Slide 2" class="w-full h-screen object-cover" />
+        <div class="absolute top-1/4 left-10 text-white ms-10" data-aos="zoom-in-up">
+          <h2 class="text-5xl">We Are Developer</h2>
+          <h1 class="text-7xl">Creative Websites</h1>
+          <p>Developers create websites for various purposes like Business, College Admissions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black text-white p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black text-white p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+  </section>
+  <!-- home end -->
+   <!-- Services -->
+<section id="services">
+    <div class="container m-10">
+        <div class="head " data-aos="fade-up">
+            <div class="text-5xl  underline underline-offset-8 decoration-red-500 decoration-4 font-bold after:content-['CES'] mb-5 after:text-red-500 text-center">OUR SERVI</div>
+        <div class="p  max-w-xl mx-auto text-center text-lg">As experts in full-stack web application development, we specialize in creating robust, scalable, and user-friendly websites and web applications tailored to your business needs.</div>
+        </div>
+        <div class="services grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+                    <div class=" items-center space-x-4" data-aos="zoom-in-up">
+                    <h2 class="text-2xl font-semibold text-gray-800 flex"><!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0h-3" />
+                        </svg>Full-Stack Web Development</h2>
+                    <p class="text-lg text-gray-600">
+                        We build both the front-end and back-end of web applications, ensuring seamless interaction between the user interface and server-side logic. Using modern technologies like PHP, Laravel, JavaScript, and MySQL, I craft websites and applications that are fast, reliable, and efficient.
+                    </p>
+                </div>
+            <div class="service" data-aos="zoom-in-up">
+                <div class=" items-center space-x-4">
+                    <h2 class="text-2xl font-semibold text-gray-800 flex"><!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0h-3" />
+                        </svg> E-commerce Development</h2>
+                    <p class="text-lg text-gray-600">
+                        We specialize in building e-commerce platforms that are secure, scalable, and easy to use. Whether you need a custom-built solution or an integration with platforms like WooCommerce or Shopify, We can help you create an online store that drives sales and offers a smooth shopping experience for your customers.
+                    </p>
+                </div>
+            </div>
+            <div class="service" data-aos="zoom-in-up">
+                <div class=" items-center space-x-4">
+                    <h2 class="text-2xl font-semibold text-gray-800 flex"><!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0h-3" />
+                        </svg> Web Application Development</h2>
+                    <p class="text-lg text-gray-600">
+                        For businesses that need custom functionalities, we develop fully customized web applications that help you solve specific business problems, automate processes, or provide unique services. From complex dashboards to client portals, we tailor applications to your exact requirements.
+                    </p>
+                </div>
+            </div>
+            <div class="service"data-aos="zoom-in-up">
+                <div class=" items-center space-x-4">
+                    <h2 class="text-2xl font-semibold text-gray-800 flex"><!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0h-3" />
+                        </svg>Website Maintenance & Support </h2>
+                    <p class="text-lg text-gray-600">
+                        Once your site is live, we provide ongoing maintenance and support to ensure it remains up-to-date, secure, and functioning at its best. This includes regular updates, bug fixes, and performance enhancements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- services end -->
+  <!-- about page -->
+ <section id="about">
+    <div class="container px-20 py-4">
+        <div class="hheading">
+            <h1 class="text-5xl font-bold text-center pb-20  underline underline-offset-8 decoration-red-500 decoration-4">ABOUT <span class="text-red-500">US</span>
+                
+            </h1>
+        </div>
+        <div class="container flex flex-row justify-center justify-around gap-8">
+            <div class="container basis-2/4" data-aos="fade-right ">
+                <h1 class="text-5xl font-bold before:content-['G'] mb-10 before:text-red-500 before:text-5xl">rowth is at the heart of what we do.</h1>
+                <p class="text-2xl" data-aos="fade-right"> We are a team of passionate and determined individuals driven by making a real difference. 
+                    Through partnership, we forge strong and lasting relationships that drive mutual success and 
+                    create impactful solutions.</p>
+            </div>
+        <div class="container basis-2/4 bg-white ps-10 ms-5 " data-aos="fade-left">
+           <img class=" bg-center bg-no-repeat bg-cover ps-10" src="assets/media/about1.avif" alt="">
+        </div>
+        </div>
+    </div>
+ </section>
+<!-- about end -->
+ <!-- team -->
+ <section id="team">
+    <div class="container">
+        <div class="head text-center mb-10 mx-auto" data-aos="fade-up">
+            <div class="text-5xl underline underline-offset-8 decoration-red-500 decoration-4 font-bold after:content-['AM'] mb-5 after:text-red-500">
+                OUR TEAM
+            </div>
+            <div class="p max-w-2xl mx-auto text-lg">
+                Meet the passionate and talented individuals who make our work possible. Together, we are committed to building innovative solutions and creating lasting impacts for our clients.
+            </div>
+        </div>
+    
+        <div class="team ms-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
+            <!-- Card 1 -->
+            <div class="ms-10 card bg-gray-500 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-right">
+                <div class="img mb-4">
+                    <img src="assets/media/card1.webp" alt="Ahsan Naz" class="w-full h-48 object-cover rounded-md">
+                </div>
+                <div class="intro text-center text-white">
+                    <h3 class="text-2xl font-semibold mb-2">Ahsan Naz</h3>
+                    <p class="text text-white-500 mb-4">Vice Leader</p>
+                    <div class="icon flex justify-center space-x-4">
+                        <i class="fa-solid fa-envelope text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-phone text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-location-dot text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-rocketchat text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-globe text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="card bg-gray-500 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-zoom">
+                <div class="img mb-4">
+                    <img src="assets/media/card2.webp" alt="Haider Basha" class="w-full h-48 object-cover rounded-md">
+                </div>
+                <div class="intro text-center text-white">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Haider Basha</h3>
+                    <p class="text-white-500 mb-4">Manager</p>
+                    <div class="icon flex justify-center space-x-4">
+                        <i class="fa-solid fa-envelope text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-phone text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-location-dot text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-rocketchat text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-globe text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="card bg-gray-500 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-left">
+                <div class="img mb-4">
+                    <img src="assets/media/card3.jpg" alt="Mubashir Khalil" class="w-full h-48 object-cover rounded-md">
+                </div>
+                <div class="intro text-center text-white">
+                    <h3 class="text-2xl font-semibold mb-2">Mubashir Khalil</h3>
+                    <p class="text-white-500 mb-4">Leader</p>
+                    <div class="icon flex justify-center space-x-4">
+                        <i class="fa-solid fa-envelope text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-phone text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-location-dot text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-rocketchat text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-solid fa-globe text-xl text-white-600 hover:text-red-500 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team end -->
+ </section>
+<!-- team end -->
+ <!-- contact -->
+  <section id="contact">
+    <div class="container my-10">
+        <div class="head " data-aos="fade-up">
+            <div class="text-5xl  underline underline-offset-8 decoration-red-500 decoration-4 font-bold after:content-['__US'] mb-5 after:text-red-500 text-center">Contact</div>
+        <div class="p  max-w-3xl mx-auto text-center text-lg">We’d love to hear from you! Whether you have a question, want to collaborate, or need assistance with your project, don’t hesitate to get in touch. Our team is ready to <br>assist you  and provide solutions that meet your needs.</div>
+        </div>
+        <div class="sides mx-10 my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 ">
+            <div class="right-side">
+                <div class="text-2xl font-normal after:content-['FO'] mb-3 after:text-red-500">CONTACT IN</div>
+                <div class="a"><i class="fa-solid fa-location-dot text-xl me-2 pt-5 pb-7 text-red-500"></i>Address: No 3, Bahwalpur , Pakistan</div>
+                <div class="a"><i class="fa-solid fa-envelope  text-xl me-2 pb-7 text-red-500"></i> Mail Us: info@web.com</div>
+                <div class="a"><i class="fa-solid fa-phone text-xl me-2 pb-7 text-red-500"></i>Phone: +92 328-5199123</div>
+                <div class="a"><i class="fa-solid fa-globe me-2 text-red-500"></i>Website: www.web.com</div>
+            </div>
+            <div class="left-side">
+                <input type="text" placeholder="   Name" class="w-100 pe-10 mb-5 me-3 h-10 border-2 border-black">
+                <input type="email" placeholder="Email Address" class="w-2/4 ps-3 ms-10 h-10 border-2 border-black pe-5">
+                <input type="text" placeholder="Subject" class="w-full h-10 ps-3 mb-5 border-2 border-black">
+                <textarea class="w-full h-32 border-2 border-black ps-3" name="text" id="" placeholder="Enter yor message....."></textarea>
+            <div class="button w-full p-3 border-2 border-red-500 text-center text-red-500 hover:bg-red-600 hover:text-white"> Send Now</div>
+            </div>
+        </div>
+    </div>
+  </section>
+     <!-- contact end -->
+     <!-- follow -->
+    <section id="follow">
+        <div class="container my-10">
+            <div class="heading" data-aos="fade-up">
+                <div class="text-5xl  underline underline-offset-8 decoration-red-500 decoration-4 font-bold after:content-['ON'] mb-5 after:text-red-500 text-center">Follow Us 
+               </div>
+               <p class="max-w-xl text-center mx-auto">We would love to hear from you! Whether you have a question about a project, want to collaborate, or just want to say hello, feel free to reach out using the details below.</p>
+            </div>
+            <div class="icon flex justify-center space-x-10 mt-10 ">
+                <i class="fa-solid fa-envelope text-3xl text-gray-600 hover:text-red-500 cursor-pointer 
+                          rounded-full p-3 bg-gray-200 hover:text-red-500 transition-colors duration-300"></i>
+                <i class="fa-brands fa-rocketchat text-3xl text-gray-600 hover:text-red-500 cursor-pointer 
+                          rounded-full p-3 bg-gray-200 hover:text-red-500 transition-colors duration-300"></i>
+                <i class="fa-brands fa-linkedin-in text-3xl text-gray-600 hover:text-red-500 cursor-pointer 
+                          rounded-full p-3 bg-gray-200 hover:text-red-500 transition-colors duration-300"></i>
+                <i class="fa-solid fa-globe text-3xl text-gray-600 hover:text-red-500 cursor-pointer 
+                          rounded-full p-3 bg-gray-200 hover:text-red-500 transition-colors duration-300"></i>
+            </div>  
+            <div class="text-2xl mb-5 font-semibold text-center mt-10">
+                © Copyright 2045 Web Development - Created By: 
+                <span class="text-red-500"><a href="https://codelab.pk/">Team websites</a></span>
+            </div>
+             </div>
+    </section>
+    <!-- follow end -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const nextButton = document.querySelector('button:nth-of-type(2)');
+    const prevButton = document.querySelector('button:nth-of-type(1)');
+    const carousel = document.getElementById('carousel');
+
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('#carousel > div');
+    const totalSlides = slides.length;
+
+    // Go to next slide
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+
+    // Go to previous slide
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+  </script>
+
+</body>
+
+</html>
